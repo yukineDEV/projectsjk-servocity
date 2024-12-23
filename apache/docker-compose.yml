@@ -1,0 +1,13 @@
+services:
+  web:
+    image: apache_image
+    container_name: webserver
+    ports:
+      - "80:80"
+    volumes:
+      - C:\Users\bimar\Documents\Tugas infor\SEMESTER 3\SJK\projectsjk:/var/www/index.html
+    networks:
+      - appsjk
+networks:
+  appsjk:
+    external: true
